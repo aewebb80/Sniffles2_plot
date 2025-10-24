@@ -12,7 +12,8 @@ def _parse_arguments() -> Tuple[str, str]:
         required=True,
     )
     parser.add_argument(
-        "-o", "--output", help="Specify the path to the VCF output file"
+        "-o", "--output", help="Specify the path to the VCF output file",
+        required=True,
     )
     args = parser.parse_args()
     return args.input, args.output
